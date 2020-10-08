@@ -1,4 +1,9 @@
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+	
+	
+	/*disply none list*/
+	.right-text {display: none;}
+
 	/*header*/
 	header {
 		width: 100vw;
@@ -25,7 +30,19 @@
 	}
 	/*gnb-area*/
 	#gnb-area {
-		z-index: 98;
+		overflow: hidden;
+	}
+	#gnb-area:before {
+		left: 100%;
+	}
+	#gnb-area .gnb {padding: 50% 10%;}
+	#gnb-area .gnb .sub-list > li {
+	}
+	#gnb-area .gnb > li {
+		float: inherit;
+	}
+	#gnb-area footer {
+		display: none
 	}
 	/*main-visual*/
 	#main-visual {
@@ -78,19 +95,8 @@
     #story ul li {float: inherit; border-right: 0; margin-top: 90px; width: 100%;}
     
     /*miele*/
-    #miele {margin-bottom: 200px;}
-    #miele .miele-banner{
-        width: 100vw;
-        height: 30vh;
-    }
-    #miele .miele-banner img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
-    #miele .miele-text-area b {
-        font-size: 34px;
-    }
+    #miele {margin-bottom: 200px; overflow: hidden;}
+		#miele:before {content: ''; width: 0;}
     
     /*resister*/
     #register {margin-bottom: 200px}

@@ -45,6 +45,29 @@ $(function(){
 		$('.tnb').toggleClass('on');	
 	});	
 
+	/*arcodian gnb*/
+	if ($(window).width() <= 1024) {
+		$('.gnb').each(function() {
+			var $gnb = $(this),
+					$gnbList = $('.gnb-list'),
+					$gnbListA = $('.gnb-list > a'),
+					$subList = $('.sub-list');
+			
+			console.log('냥');
+			$('.menu').on('click', function(){
+				$subList.slideUp();
+				$('header h1 a').toggleClass('on');
+			})
+			$gnbListA.on('click', function() {
+				if ($(this).next().css('display') == 'none') {
+					$subList.slideUp();
+					$(this).next().slideDown();
+				} else {
+					$subList.slideUp();
+				};
+			});
+		});
+	};
 	
 	/*mv-slider*/
 	
@@ -59,7 +82,7 @@ $(function(){
 			interval = 3500,
 			timer;
 		
-		$('.banner-number').text(currentIndex);
+		$('.banner-number').text(currentIndex+1);
 		$('.banner-number.totalNum').text(count);
 		
 		/*1. slideLi 배치*/
@@ -76,7 +99,7 @@ $(function(){
 		},sp);
 		currentIndex = i;
 		update(); /*사용자 정의 함수*/
-		$('.banner-number').text(currentIndex);
+		$('.banner-number').text(currentIndex+1);
 		$('.banner-number.totalNum').text(count);
 	}
 	function update() {
@@ -122,7 +145,20 @@ $(function(){
 	});	
 
 	/*state-bar aniamate*/
+	var $stateBarAni = $('.state-bar-ani')
 	
+	function st() {
+		$stateBarAni.animate({
+			width: '100%'
+		},3500,function(){
+			$stateBarAni.css({
+				width: 0
+			});
+		});
+	}
+	setInterval(function(){
+		st();
+	});
 	
 	/*animation*/
 	var $story = $('#story');
@@ -135,12 +171,41 @@ $(function(){
 		}
 	});
 	
-    
-    var swiper = new Swiper('.service-list-swiper', {
-      slidesPerView: 3,
-      spaceBetween: 30
-    });
-    
+ 	/*btn-right-area*/
+	var $btnRight = $('.btn-right-area')
+	var $footerOST = $('footer').offset().top;
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 300 ) {
+			$btnRight.addClass('on');
+		} else if ($(this).scrollTop() < 200 && $(this).scrollTop > 1500){
+			$btnRight.removeClass('on');
+		} else {
+			$btnRight.removeClass('on');
+		}
+	}) 
+	
+	
+//$('#miele-banner > div:gt(0)').hide();
+//
+//setInterval(function(){
+//    $('#miele-banner > div:first')
+//        .fadeOut(1000)
+//        .next()
+//        .fadeIn(1000)
+//        .end()
+//        .appendTo('#miele-banner');
+//},3000);
+	
+	$('.miele-banner > div:gt(0)').hide();
+	
+	function mieleSlide() {
+		$('.miele-banner > div:first').fadeOut(2000).next().fadeIn(2000).end().appendTo('.miele-banner');
+	}
+	
+	setInterval(function(){
+		mieleSlide();
+	},4000);
+
 });
 
 
