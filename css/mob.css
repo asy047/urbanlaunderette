@@ -40,6 +40,12 @@
 	#main-visual .banner-ex {
 		left: 5%
 	}
+	#main-visual .banner-ex .banner-ex-text strong {
+		font-size: 36px;
+	}
+	#main-visual .banner-ex .banner-ex-text p {
+		font-size: 20px;
+	}
 	#main-visual .scroll {display: none;}
 	
 	/*gnb-area*/
@@ -166,6 +172,27 @@
 	}
 	#register-mob .register-text-area {
 		text-align: center;
-		padding: 0;
+	}
+	#register-mob .register-text-area h3{
+		margin-bottom: 30px;
+	}
+	#register-mob .register-text-area .btn-area {
+		margin-top: 30px;
+	}
+	
+	/*main-footer*/
+	#main-footer {
+		padding: 15% 5%;
+		font-size: 13px;
+	}
+	#main-footer .sns {
+		left: 5%; top: 30%
+	}
+	#wrap .btn-right-area.on {
+		right: 10%;
+		bottom: 50px;
+	}
+	#main-footer address > span {
+		margin-left: 0;
 	}
 }
