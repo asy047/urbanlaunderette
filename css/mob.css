@@ -78,7 +78,7 @@
 	}
 	
 	/*service*/
-	#service {padding: 0 5% 100px; box-sizing: border-box;}
+	#service {margin-top: 100px; padding: 0 5% 100px; box-sizing: border-box;}
 	#service .service-list-swiper {width: 100%; overflow: scroll;}
 	#service .service-list {display: flex; width: 500%;}
 	#service .service-list .service-box {margin-right: 20px;}
@@ -96,10 +96,10 @@
 	#archive-mob .archive-main-visual img {width: 100%}
 	#archive-mob strong {
 		display: inline-block;
-		width: 120%;
+		margin-left: 16px;
 		white-space: nowrap;
-		font-size: 120px;
-		left: 30%;
+		font-size: 25px;
+		right: 100%;
 	}
 	#archive-mob .archive-main-visual {
 		position: relative;
@@ -121,6 +121,7 @@
 	#archive {display: none;}
 	
 	/*story*/
+	#story {padding-top: 100px}
 	#story ul li {
 		float: inherit;
 		width: 100%;

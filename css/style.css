@@ -557,11 +557,8 @@ header.on .menu span {
 #archive {position: relative;}
 #archive strong {
 	display: inline-block;
-	position: relative;
-	left: 50%;
-	width: 120%;
 	white-space: nowrap;
-	font-size: 180px;
+	font-size: 170px;
 	margin-bottom: 30px;
 }
 #archive .archive-main-visual {

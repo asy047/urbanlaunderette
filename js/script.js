@@ -7,21 +7,22 @@ $(function(){
 		$wrap.width($win.width());
 	})
 	
-	
 	/*archive strong*/
-		gsap.to(".move", {
-			scrollTrigger: {
-				trigger: ".move",
-				scrub: 1,
-				start: "top center",
-				end: "top 50vh",
-//				markers: true
-			},
-			x: - 1500,
-			ease: "none",
-			duration: 5
-		});
-	
+//gsap.registerPlugin(ScrollTrigger)
+//gsap.to(".move", {
+//	scrollTrigger: {
+//		trigger: ".move",
+//		scrub: true,
+//		start: "top 300px",
+//		end: "top 800px",
+//		markers: true
+//	},
+//	x: 400,
+//	rotation: 360,
+//	ease: "none",
+//	duration: 3
+//})
+
 	
 	/*main-header*/
 	
@@ -207,6 +208,9 @@ $(function(){
 	},4000);
 
 });
+
+
+
 
 
 

@@ -85,7 +85,7 @@
     #archive {overflow: hidden;}
     #archive .archive-main-visual {width: 100vw; height: auto;}
     #archive .archive-main-visual img{width: 100%;}
-    #archive strong {font-size: 100px;}
+    #archive strong {font-size: 65px; margin-left: 16px;}
     #archive .archive-main-visual .text-area {left: 5%;}
     #archive .archive-main-visual .text-area b {font-size: 36px;}
     
