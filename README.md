@@ -1,7 +1,7 @@
-# urbanlaunderette
-
 # 어반런드렛 웹 퍼블리싱 클론코딩
 - HTML5 CSS3 HTML CSS jQuery JavaScript
+- https://github.com/asy047/urbanlaunderette
+
 
 JavaScript 애니메이션이 많은 어반런드렛 공식 홈페이지를 웹 퍼블리싱.
 웹 애니메이션이 많지만 사용자가 긴 로딩 없이 사이트를 방문할 수 있게 고려하여 퍼블리싱.
